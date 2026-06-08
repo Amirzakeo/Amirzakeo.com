@@ -754,9 +754,9 @@ h3 { font-size: clamp(20px, 2.3vw, 30px); line-height: 1.05; letter-spacing: -.0
   overflow-x: auto;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  background: #020202;
+  background: var(--surface-warm);
 }
-.article-card pre code { padding: 0; border: 0; background: transparent; white-space: pre; }
+.article-card pre code { padding: 0; border: 0; color: var(--fg); background: transparent; white-space: pre; }
 .md-table-wrap { margin-top: 18px; overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius-sm); }
 .md-table { width: 100%; border-collapse: collapse; min-width: 620px; }
 .md-table th, .md-table td { padding: 12px 14px; border-bottom: 1px solid var(--border-soft); text-align: left; vertical-align: top; }
