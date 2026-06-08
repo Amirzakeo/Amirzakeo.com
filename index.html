@@ -1,0 +1,149 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amir Hossein Gholami | Technical Art Portfolio</title>
+  <script>try{var p=new URLSearchParams(location.search);var t=p.get('theme')||localStorage.getItem('amir-portfolio-theme');if(t==='light'||t==='dark'){document.documentElement.dataset.theme=t;localStorage.setItem('amir-portfolio-theme',t);}}catch(error){}</script>
+  <link rel="stylesheet" href="css/portfolio.css" />
+</head>
+<body data-section="home">
+  <header class="site-header">
+    <nav class="nav" aria-label="Portfolio navigation">
+      <a class="brand" href="index.html" aria-label="Amir Hossein Gholami portfolio home">
+        <span class="brand-mark">AG</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to white theme" aria-pressed="false">White theme</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title"><span>AmirHossein Gholami</span><span class="hero-title-role">Technical Artist</span></h1>
+        <p class="hero-lede">With over 11 years of experience in design, motion graphics and technical art, I specialize in crafting procedural content and creating efficient tools that empower teams to deliver high-quality projects.</p>
+        <p class="hero-lede">As a Lead Technical Artist, I build scalable workflows and real-time environments in Unreal Engine while also guiding and mentoring cross-functional teams to deliver ambitious creative visions. My expertise spans shader programming, real-time VFX, and tool development, blending technical precision with artistic direction.</p>
+        <p class="hero-lede">I'm passionate about fostering collaboration across disciplines, aligning art and engineering, and helping teams thrive. By leveraging Unreal Engine, Python, and HLSL, I aim to create visually stunning, optimized environments that push the boundaries of interactive experiences. With a background in marketing, and IT, I bring a versatile skill set that enhances both production and leadership impact.</p>
+        <div class="action-row">
+          <a class="primary-action" href="case-studies.html">View case studies</a>
+          <a class="secondary-action" href="cv.html">View CV</a>
+          <a class="secondary-action" href="https://vimeo.com/789428774" target="_blank" rel="noreferrer">3D reel</a>
+        </div>
+      </div>
+      <aside class="hero-board reel-board" aria-label="Reels and useful links">
+        <div class="board-topline"><span>Reels</span><span>Useful links</span></div>
+        <div class="reel-card-grid">
+          <a class="reel-card reel-video" href="https://vimeo.com/789428774" target="_blank" rel="noreferrer">
+            <span class="reel-thumb" aria-hidden="true"><span class="play-mark">▶</span></span>
+            <span class="reel-copy"><strong>3D Reel</strong><em>Vimeo showcase</em></span>
+          </a>
+          <a class="reel-card reel-behance" href="http://www.behance.net/amirzakeo" target="_blank" rel="noreferrer">
+            <span class="reel-thumb" aria-hidden="true"><span>Be</span></span>
+            <span class="reel-copy"><strong>Behance</strong><em>Visual portfolio</em></span>
+          </a>
+          <a class="reel-card reel-linkedin" href="https://fi.linkedin.com/in/amirhosseingholami" target="_blank" rel="noreferrer">
+            <span class="reel-thumb" aria-hidden="true"><span>in</span></span>
+            <span class="reel-copy"><strong>LinkedIn</strong><em>Career profile</em></span>
+          </a>
+          <a class="reel-card reel-cv" href="assets/documents/AmirHosseinGholami-TA-CV.pdf" target="_blank" rel="noreferrer">
+            <span class="reel-thumb" aria-hidden="true"><span>CV</span></span>
+            <span class="reel-copy"><strong>Resume PDF</strong><em>Downloadable CV</em></span>
+          </a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section split-section" id="projects" aria-labelledby="projects-title">
+      <div>
+        <p class="kicker">Selected work</p>
+        <h2 id="projects-title">Featured Case Studies</h2>
+      </div>
+    </section>
+
+    <section class="project-grid featured-grid" aria-label="Featured case study links">
+      <a class="project-tile" href="projects/material-reparenting-tool.html">
+        <span class="tile-media"><img src="assets/case-studies/MaterialReparentingTool/MaterialReparenting.png" alt="Material reparenting tool screenshot" /></span>
+        <span class="tile-body" data-category="Tools">
+          <span class="tile-index">01</span>
+          <span class="tile-meta">Editor Tools / Asset Action Utility</span>
+          <h3>Material reparenting and dependency tooling</h3>
+          <p>A complex Unreal tool that inspects material graphs, detects unused assets, and standardizes material parents across 46,000+ materials.</p>
+          <span class="tile-link">Open case study</span>
+        </span>
+      </a>
+      <a class="project-tile" href="projects/voronoi-world-generation.html">
+        <span class="tile-media"><img src="assets/case-studies/VoronoiWorldGenerator/VoronoiWorldGenerator.png" alt="Voronoi procedural world generation screenshot" /></span>
+        <span class="tile-body" data-category="PCG">
+          <span class="tile-index">02</span>
+          <span class="tile-meta">Voronoi / Render Target / PCG</span>
+          <h3>Voronoi world generation prototype</h3>
+          <p>A shader-to-PCG experiment for splitting a procedural world into controllable regions, masks, biomes, and spawn areas.</p>
+          <span class="tile-link">Open case study</span>
+        </span>
+      </a>
+      <a class="project-tile" href="projects/boat-splash-system.html">
+        <span class="tile-media"><img src="assets/case-studies/BoatSplashSystem/BoatSplashSystem.png" alt="Boat splash system screenshot" /></span>
+        <span class="tile-body" data-category="VFX">
+          <span class="tile-index">03</span>
+          <span class="tile-meta">Niagara / Water / Boats</span>
+          <h3>Boat splash and wake system</h3>
+          <p>Realtime wake, foam, and spray behavior tested across multiple boat types and debug passes.</p>
+          <span class="tile-link">Open case study</span>
+        </span>
+      </a>
+    </section>
+
+    <div class="section-cta">
+      <a class="secondary-action" href="case-studies.html">Browse all case studies</a>
+    </div>
+
+    <section class="section" id="capabilities" aria-labelledby="capabilities-title">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Capability map</p>
+          <h2 id="capabilities-title">What I can own end-to-end.</h2>
+        </div>
+      </div>
+      <div class="capability-lanes">
+        <article class="lane-card"><span>Pipeline</span><h3>Engine workflow ownership</h3><p>UE4 to UE5 upgrades, import/interchange pipelines, asset management, folder conventions, performance checks, documentation, and debugging practice.</p></article>
+        <article class="lane-card"><span>Tools</span><h3>Artist-facing automation</h3><p>Python scripts, Editor Utility Widgets, actor and asset action utilities, reference/dependency tools, material tools, and pivot utilities.</p></article>
+        <article class="lane-card"><span>Realtime</span><h3>Procedural worlds and VFX</h3><p>PCG, World Partition, object placers, Niagara weather/fire/smoke/water systems, replication, and runtime Blueprint logic.</p></article>
+        <article class="lane-card"><span>Rendering</span><h3>Shaders and material systems</h3><p>HLSL, Unreal material graph, master materials, volumetric effects, post-process materials, and optimized visual systems for large asset sets.</p></article>
+      </div>
+    </section>
+
+    <section class="section stack-section" id="stack" aria-labelledby="stack-title">
+      <div>
+        <p class="kicker">Stack</p>
+        <h2 id="stack-title">Technical Stack</h2>
+      </div>
+      <div class="stack-cloud" aria-label="Tools and technologies">
+        <span>Unreal Engine 5</span><span>Unity</span><span>Python</span><span>HLSL / GLSL</span><span>C++</span><span>Blueprints</span><span>Niagara</span><span>PCG</span><span>Houdini</span><span>Blender</span><span>Cinema 4D</span><span>Substance 3D Painter</span><span>Embergen</span><span>Gaea</span><span>World Creator</span><span>After Effects</span><span>Figma</span>
+      </div>
+    </section>
+
+    <section class="contact-band" id="contact" aria-labelledby="contact-title">
+      <div>
+        <p class="kicker">Contact</p>
+        <h2 id="contact-title">Need a technical artist who can connect art direction, tools, and production?</h2>
+        <p>Email: <span id="emailText">amirhoseinghs.94@gmail.com</span> · Phone: +358 40 588 7919 · Helsinki, Finland</p>
+      </div>
+      <div class="contact-actions">
+        <button class="primary-action" type="button" data-copy-email>Copy email</button>
+        <a class="secondary-action" href="contact.html">Contact page</a>
+        <a class="secondary-action" href="https://fi.linkedin.com/in/amirhosseingholami" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="secondary-action" href="http://www.behance.net/amirzakeo" target="_blank" rel="noreferrer">Behance</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Email copied</div>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>

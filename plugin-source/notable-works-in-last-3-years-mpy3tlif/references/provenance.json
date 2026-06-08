@@ -1,0 +1,19 @@
+{
+  "candidateId": "8e8f69f6-439d-4184-b093-6f9252f2a2ae",
+  "projectId": "e6895ab8-6498-4702-b76d-3fc388099f5e",
+  "runId": "d9473ada-f7eb-45c3-abda-3b418c6a94b9",
+  "conversationId": "ab3a29d5-e355-458a-bda8-fb315043bdc2",
+  "provenance": {
+    "summary": "Detected from mpy1jcwr-AmirHosseinGholami-TA_CV.md after a successful run.",
+    "detectedAt": 1780489798880
+  },
+  "sourceRefs": [
+    {
+      "kind": "file",
+      "value": "mpy1jcwr-AmirHosseinGholami-TA_CV.md",
+      "label": "mpy1jcwr-AmirHosseinGholami-TA_CV.md",
+      "size": 9566,
+      "copied": true
+    }
+  ]
+}

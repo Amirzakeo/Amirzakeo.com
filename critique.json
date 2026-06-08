@@ -1,0 +1,26 @@
+{
+  "kind": "critique-panel",
+  "score": 4,
+  "axes": {
+    "philosophy": {
+      "score": 4,
+      "notes": "The portfolio keeps the recruiter route model while following the selected yellow/black design system by default, with a new white theme available as a controlled alternate mode across Home, Case Studies, CV, Contact, and project pages."
+    },
+    "hierarchy": {
+      "score": 4,
+      "notes": "The CV page now uses a full eight-role timeline, ordered from Graphic Designer through Lead Technical Artist, with the current AILiveSim role open by default."
+    },
+    "execution": {
+      "score": 4,
+      "notes": "Shared CSS supports the expanded CV timeline with compact desktop nodes, tablet wrapping, and two-column mobile wrapping without changing the site visual system."
+    },
+    "specificity": {
+      "score": 4,
+      "notes": "The CV timeline reflects the user's supplied work history: Graphic Designer, Junior Motion Designer, 2D Motion Designer, 3D Motion Designer, Lead 3D Motion Designer, Senior 3D Artist, Senior Technical Artist, and Lead Technical Artist."
+    },
+    "restraint": {
+      "score": 4,
+      "notes": "Yellow remains the primary signal in both modes; dark mode keeps black surfaces with white borders, while white mode uses white canvas, black structure, muted grey texture, and restrained yellow selected states."
+    }
+  }
+}

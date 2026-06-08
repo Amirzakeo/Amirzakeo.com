@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Amir Hossein Gholami</title>
+  <script>try{var p=new URLSearchParams(location.search);var t=p.get('theme')||localStorage.getItem('amir-portfolio-theme');if(t==='light'||t==='dark'){document.documentElement.dataset.theme=t;localStorage.setItem('amir-portfolio-theme',t);}}catch(error){}</script>
+  <link rel="stylesheet" href="css/portfolio.css" />
+</head>
+<body data-section="contact">
+  <header class="site-header">
+    <nav class="nav" aria-label="Portfolio navigation">
+      <a class="brand" href="index.html" aria-label="Amir Hossein Gholami portfolio home"><span class="brand-mark">AG</span><span>AmirHossein Gholami - Technical Artist</span></a>
+      <div class="nav-links"><a href="index.html">Home</a><a href="case-studies.html">Case Studies</a><a href="cv.html">CV</a><a href="contact.html" aria-current="page">Contact</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to white theme" aria-pressed="false">White theme</button></div>
+    </nav>
+  </header>
+  <main>
+    <section class="contact-page" aria-labelledby="contact-title">
+      <div class="contact-intro">
+        <p class="kicker">Contact</p>
+        <h1 id="contact-title">Let’s talk about technical art, tools, and realtime production.</h1>
+        <p class="hero-lede">I’m based in Helsinki and open to lead technical art, Unreal pipeline, procedural tools, realtime VFX, and cross-discipline production roles.</p>
+        <div class="contact-methods" aria-label="Contact methods">
+          <a href="mailto:amirhoseinghs.94@gmail.com"><span>Email</span><strong>amirhoseinghs.94@gmail.com</strong></a>
+          <a href="tel:+358405887919"><span>Phone</span><strong>+358 40 588 7919</strong></a>
+          <a href="https://fi.linkedin.com/in/amirhosseingholami" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>fi.linkedin.com/in/amirhosseingholami</strong></a>
+          <a href="http://www.behance.net/amirzakeo" target="_blank" rel="noreferrer"><span>Behance</span><strong>behance.net/amirzakeo</strong></a>
+        </div>
+      </div>
+      <aside class="contact-card">
+        <div class="board-topline"><span>Fast actions</span><span>Recruiter ready</span></div>
+        <button class="primary-action" type="button" data-copy-email>Copy email</button>
+        <a class="secondary-action" href="cv.html">View CV timeline</a>
+        <a class="secondary-action" href="assets/documents/AmirHosseinGholami-TA-CV.pdf" target="_blank" rel="noreferrer">Open CV PDF</a>
+        <a class="secondary-action" href="https://vimeo.com/789428774" target="_blank" rel="noreferrer">Watch 3D reel</a>
+      </aside>
+    </section>
+
+    <section class="contact-form-panel" aria-labelledby="message-title">
+      <div>
+        <p class="kicker">Message starter</p>
+        <h2 id="message-title">Send a focused note.</h2>
+        <p class="section-note">This form opens your email client with a structured draft, so the message stays private and direct.</p>
+      </div>
+      <form class="contact-form" data-contact-form>
+        <label>Reason
+          <select name="reason" required>
+            <option value="Role discussion">Role discussion</option>
+            <option value="Technical art consulting">Technical art consulting</option>
+            <option value="Portfolio follow-up">Portfolio follow-up</option>
+          </select>
+        </label>
+        <label>Your email
+          <input name="from" type="email" placeholder="name@studio.com" required />
+        </label>
+        <label>Message
+          <textarea name="message" rows="5" placeholder="Tell me about the role, production context, engine, and what you need help owning." required></textarea>
+        </label>
+        <button class="primary-action" type="submit">Open email draft</button>
+      </form>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite">Email copied</div>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>
