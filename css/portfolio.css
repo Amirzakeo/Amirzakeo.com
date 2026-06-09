@@ -573,7 +573,8 @@ h3 { font-size: clamp(20px, 2.3vw, 30px); line-height: 1.05; letter-spacing: -.0
 .profile-card, .cv-list-card, .tool-card { padding: 20px; }
 .profile-card span, .tool-card span { color: var(--accent); font: 800 12px/1 var(--font-mono); text-transform: uppercase; letter-spacing: .1em; }
 .profile-card h3, .tool-card h3 { margin-top: 16px; font-size: 24px; }
-.profile-card p, .tool-card p, .cv-list-card li, .timeline-panel li { color: var(--muted); }
+.profile-card p, .tool-card p, .tool-card li, .cv-list-card li, .timeline-panel li { color: var(--muted); }
+.tool-card ul { margin: 14px 0 0; padding-left: 14px; display: grid; gap: 8px; }
 .timeline { position: relative; display: grid; gap: 18px; }
 .timeline-track {
   position: relative;
