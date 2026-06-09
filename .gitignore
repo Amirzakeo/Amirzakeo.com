@@ -1,4 +1,5 @@
 CaseStudies/
+/plugin-source/
 /.od-artifacts/
 /.od-skills/
 *.artifact.json
