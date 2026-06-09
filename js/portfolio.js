@@ -73,6 +73,64 @@ themeButtons.forEach((button) => {
   });
 });
 
+let videoModal = document.querySelector('[data-video-modal]');
+let videoFrame = videoModal ? videoModal.querySelector('[data-video-frame]') : null;
+let videoTitle = document.getElementById('videoModalTitle');
+let previousVideoTrigger = null;
+
+function ensureVideoModal() {
+  if (!videoModal && document.querySelector('[data-vimeo-id]')) {
+    videoModal = document.createElement('div');
+    videoModal.className = 'video-modal';
+    videoModal.setAttribute('data-video-modal', '');
+    videoModal.hidden = true;
+    videoModal.innerHTML = '<div class="video-modal-backdrop" data-video-close></div><section class="video-modal-panel" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle"><div class="video-modal-topline"><h2 id="videoModalTitle">Reel</h2><button class="video-modal-close" type="button" data-video-close aria-label="Close reel video">Close</button></div><div class="video-modal-frame" data-video-frame></div></section>';
+    document.body.appendChild(videoModal);
+  }
+  videoFrame = videoModal ? videoModal.querySelector('[data-video-frame]') : null;
+  videoTitle = document.getElementById('videoModalTitle');
+}
+
+ensureVideoModal();
+
+function closeVideoModal() {
+  if (!videoModal || !videoFrame) return;
+  videoModal.hidden = true;
+  videoFrame.textContent = '';
+  document.body.classList.remove('has-open-modal');
+  if (previousVideoTrigger) previousVideoTrigger.focus();
+}
+
+function openVideoModal(trigger) {
+  if (!videoModal || !videoFrame) return;
+  const vimeoId = trigger.dataset.vimeoId;
+  if (!vimeoId) return;
+
+  previousVideoTrigger = trigger;
+  if (videoTitle) videoTitle.textContent = trigger.dataset.videoTitle || 'Reel';
+  videoFrame.innerHTML = '<iframe src="https://player.vimeo.com/video/' + encodeURIComponent(vimeoId) + '?autoplay=1&title=0&byline=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="' + (trigger.dataset.videoTitle || 'Portfolio reel') + '"></iframe>';
+  videoModal.hidden = false;
+  document.body.classList.add('has-open-modal');
+  const closeButton = videoModal.querySelector('[data-video-close]');
+  if (closeButton) closeButton.focus();
+}
+
+document.querySelectorAll('[data-vimeo-id]').forEach((trigger) => {
+  trigger.addEventListener('click', (event) => {
+    event.preventDefault();
+    openVideoModal(trigger);
+  });
+});
+
+if (videoModal) {
+  videoModal.querySelectorAll('[data-video-close]').forEach((control) => {
+    control.addEventListener('click', closeVideoModal);
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !videoModal.hidden) closeVideoModal();
+  });
+}
+
 const siteHeader = document.querySelector('.site-header');
 if (siteHeader) {
   let lastScrollY = window.scrollY;

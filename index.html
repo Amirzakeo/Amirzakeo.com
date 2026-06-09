@@ -33,13 +33,17 @@
         <div class="action-row">
           <a class="primary-action" href="case-studies.html">View case studies</a>
           <a class="secondary-action" href="cv.html">View CV</a>
-          <a class="secondary-action" href="https://vimeo.com/789428774" target="_blank" rel="noreferrer">3D reel</a>
+          <a class="secondary-action" href="https://vimeo.com/789428774" data-vimeo-id="789428774" data-video-title="3D reel">3D reel</a>
         </div>
       </div>
       <aside class="hero-board reel-board" aria-label="Reels and useful links">
         <div class="board-topline"><span>Reels</span><span>Useful links</span></div>
         <div class="reel-card-grid">
-          <a class="reel-card reel-video" href="https://vimeo.com/789428774" target="_blank" rel="noreferrer">
+          <a class="reel-card reel-video" href="https://vimeo.com/808858494" data-vimeo-id="808858494" data-video-title="2D reel">
+            <span class="reel-thumb" aria-hidden="true"><span class="play-mark">▶</span></span>
+            <span class="reel-copy"><strong>2D Reel</strong><em>Vimeo showcase</em></span>
+          </a>
+          <a class="reel-card reel-video" href="https://vimeo.com/789428774" data-vimeo-id="789428774" data-video-title="3D reel">
             <span class="reel-thumb" aria-hidden="true"><span class="play-mark">▶</span></span>
             <span class="reel-copy"><strong>3D Reel</strong><em>Vimeo showcase</em></span>
           </a>
@@ -143,6 +147,16 @@
     </section>
   </main>
 
+  <div class="video-modal" data-video-modal hidden>
+    <div class="video-modal-backdrop" data-video-close></div>
+    <section class="video-modal-panel" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle">
+      <div class="video-modal-topline">
+        <h2 id="videoModalTitle">Reel</h2>
+        <button class="video-modal-close" type="button" data-video-close aria-label="Close reel video">Close</button>
+      </div>
+      <div class="video-modal-frame" data-video-frame></div>
+    </section>
+  </div>
   <div class="toast" id="toast" role="status" aria-live="polite">Email copied</div>
   <script src="js/portfolio.js"></script>
 </body>
