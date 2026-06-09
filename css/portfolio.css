@@ -468,6 +468,32 @@ h3 { font-size: clamp(20px, 2.3vw, 30px); line-height: 1.05; letter-spacing: -.0
 .contact-band { margin-top: 76px; padding: 26px; align-items: center; }
 .contact-band p { margin: 12px 0 0; color: var(--muted); }
 .contact-actions { justify-content: flex-end; }
+.compact-link-row {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 2px;
+  font: 800 11px/1 var(--font-mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.compact-link-row a {
+  padding: 7px 9px;
+  border: 1px solid color-mix(in oklab, var(--accent) 42%, transparent);
+  border-radius: var(--radius-sm);
+  color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 7%, transparent);
+  transition: border-color var(--motion-fast) var(--ease-standard), background var(--motion-fast) var(--ease-standard), transform var(--motion-fast) var(--ease-standard);
+}
+.compact-link-row a:hover,
+.compact-link-row a:focus-visible {
+  border-color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 14%, transparent);
+  transform: translateY(-1px);
+  outline: none;
+}
 
 .listing-hero { margin-bottom: 18px; }
 .case-study-index { margin-top: 18px; }
@@ -538,6 +564,7 @@ h3 { font-size: clamp(20px, 2.3vw, 30px); line-height: 1.05; letter-spacing: -.0
 }
 .cv-intro h1 { max-width: 13ch; }
 .cv-snapshot { padding: 20px; display: grid; gap: 12px; align-content: start; }
+.cv-snapshot .compact-link-row { justify-content: flex-start; margin-top: auto; padding-top: 2px; }
 .cv-stat { padding: 16px; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface-warm); }
 .cv-stat span { display: block; color: var(--accent); font: 800 clamp(34px, 5vw, 54px)/1 var(--font-mono); letter-spacing: -.08em; }
 .cv-stat p { margin: 10px 0 0; color: var(--muted); }
